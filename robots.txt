@@ -15,6 +15,6 @@ Disallow: /wp-content/uploads/wpo/wpo-plugins-tables-list.json
 User-agent: *
 Disallow:
 
-Sitemap: http://planty.web-mcdm.dk/sitemap_index.xml
+Sitemap: https://albina1302new.github.io/planty/sitemap_index.xml
 # ---------------------------
 # END YOAST BLOCK
