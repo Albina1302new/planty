@@ -1,0 +1,117 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* ===== REMOVE ALL SHOPENGINE ICONS ===== */
+
+/* wishlist (серце) */
+.shopengine-icon-add_to_favourite_1,
+.shopengine-wishlist {
+    display: none !important;
+}
+
+/* quick view (око) */
+.shopengine-quickview,
+.shopengine-icon-quick_view_1 {
+    display: none !important;
+}
+
+/* compare / стрілки */
+.shopengine_compare,
+.shopengine-icon-compare_1,
+.shopengine-product-compare,
+.shopengine-icon-repeat,
+.shopengine-icon-loop {
+    display: none !important;
+}
+
+/* ВСІ іконки ShopEngine (обережно, але ефективно) */
+[class*="shopengine-icon"] {
+    display: none !important;
+}
+
+
+/* ===== CLEAN YITH WISHLIST (SVG VERSION) ===== */
+
+/* ховаємо текст */
+.yith-wcwl-add-to-wishlist-button__label {
+    display: none !important;
+}
+
+/* центр кнопки */
+.yith-wcwl-add-to-wishlist-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* іконка */
+.yith-wcwl-add-to-wishlist-button svg {
+    width: 22px;
+    height: 22px;
+    color: #2f3e34;
+    transition: 0.3s ease;
+}
+
+/* hover ефект */
+.yith-wcwl-add-to-wishlist-button:hover svg {
+    transform: scale(1.2);
+    color: #6b8e23;
+}
+
+
+/* ===== FIX: PREVENT DUPLICATE RENDER (SAFE VERSION) ===== */
+/* НЕ використовує :first-child (бо це ламало логіку) */
+
+/* ховаємо дублікати лише якщо вони реально дубльовані в одному контейнері */
+.yith-wcwl-add-to-wishlist-button + .yith-wcwl-add-to-wishlist-button {
+    display: none !important;
+}
+
+/* додатковий захист від повторного рендера всередині одного блоку товару */
+.product .yith-wcwl-add-to-wishlist-button + .yith-wcwl-add-to-wishlist-button {
+    display: none !important;
+}
+/* =========================================
+   FOOTER ICONS — CLEAN MINIMAL STYLE
+========================================= */
+
+/* всі іконки */
+footer svg {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    opacity: 0.85;
+    transition: 0.3s ease;
+}
+
+/* робимо соц іконки менш "жирними" */
+footer .elementor-social-icon svg {
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+/* прибираємо чорну заливку */
+footer .elementor-social-icon svg path {
+    fill: currentColor !important;
+}
+
+/* вирівнюємо контактні іконки */
+footer .ekit-svg-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* відступи між іконкою і текстом */
+footer .elementor-icon-list-item {
+    align-items: center;
+    gap: 10px;
+}
+
+/* hover ефект */
+footer a:hover svg {
+    color: #6b8e23;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->

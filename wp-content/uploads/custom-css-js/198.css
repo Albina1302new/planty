@@ -1,0 +1,17 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.page .entry-title {
+    display: none;
+}
+ 
+.woocommerce-page .page-title {
+  display: none;
+}
+a{
+	text-decoration: none;
+}
+.ast-single-post .entry-content a {
+	text-decoration: none;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

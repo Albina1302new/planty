@@ -1,0 +1,29 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Пульс для всіх кнопок */
+.elementor-button {
+  animation: pulse 2.5s infinite;
+  transition: all 0.3s ease;
+}
+
+/* ВИКЛЮЧАЄМО "Læs mere" */
+.no-pulse {
+  animation: none !important;
+}
+
+/* Анімація */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(107, 143, 113, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(107, 143, 113, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(107, 143, 113, 0);
+  }
+}</style>
+<!-- end Simple Custom CSS and JS -->
